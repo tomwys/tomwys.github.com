@@ -8,8 +8,6 @@ h1. {{ page.title }}
 This is test post.
 
 <pre class="brush: python">
-<code>
 def foo(bar):
     return bar + 5
-</code>
 </pre>
