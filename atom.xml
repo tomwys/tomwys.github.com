@@ -3,26 +3,25 @@ layout: nil
 ---
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
- 
-  <title>coyled.com</title>
-  <link href="http://coyled.com/"/>
-  <link type="application/atom+xml" rel="self" href="http://coyled.com/atom.xml"/>
+  <title>Tomasz Wysocki - blog</title>
+  <link href="http://wysocki.info/"/>
+  <link type="application/atom+xml" rel="self" href="http://wysocki.info/atom.xml"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>http://coyled.com/</id>
+  <id>http://wysocki.info/</id>
   <author>
-    <name>Dave Coyle</name>
-    <email>coyled@coyled.com</email>
+    <name>Tomasz Wysocki</name>
+    <email>tomwys@gmail.com</email>
   </author>
 
   {% for post in site.posts %}
   <entry>
-    <id>http://coyled.com{{ post.id }}</id>
-    <link type="text/html" rel="alternate" href="http://coyled.com{{ post.url }}"/>
+    <id>http://wysocki.info{{ post.id }}</id>
+    <link type="text/html" rel="alternate" href="http://wysocki.info{{ post.url }}"/>
     <title>{{ post.title }}</title>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <author>
-      <name>Dave Coyle</name>
-      <uri>http://coyled.com/</uri>
+      <name>Tomasz Wysocki</name>
+      <uri>http://wysocki.info/</uri>
     </author>
     <content type="html">{{ post.content | xml_escape }}</content>
   </entry>
