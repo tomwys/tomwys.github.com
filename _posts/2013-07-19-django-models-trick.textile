@@ -19,7 +19,7 @@ class MyListView(ListView):
         def some_additional_method(self):
             return ' '.join([str(self)] * 20)
 
-        class Meta():
+        class Meta:
             proxy = True
 </pre>
 
