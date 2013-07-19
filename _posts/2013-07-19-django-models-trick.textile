@@ -5,9 +5,9 @@ title: How to add methods to Django model just for single view.
 
 h1. {{ page.title }}
 
-I often see people adding methods to model just to use them in single view. Often those methods don't belong to model, but there is temtation to add this there for sake of simlicity.
+I often see people adding methods to model just to use them in single view. Often those methods don't belong to model, but there is temptation to add this there for sake of simplicity.
 
-I was thinging about this problem and found little hack to add methots just for single view. The beauty of this trick is that it works even for list views.
+I was thinking about this problem and found little hack to add methods just for single view. The beauty of this trick is that it works even for list views.
 
 Sample code:
 
@@ -23,4 +23,4 @@ class MyListView(ListView):
             proxy = True
 </pre>
 
-With this trick you have method <code>some_additional_method</code> avaliable in your template without changing model.
+With this trick you have method <code>some_additional_method</code> available in your template without changing model.
